@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID : "></TextView>
+        <EditText
+            android:id="@+id/join_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID를 입력하세요."></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PW : "></TextView>
+        <EditText
+            android:id="@+id/join_PW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="PW를 입력하세요."></EditText>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_joinMem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"></Button>
+
+</LinearLayout>

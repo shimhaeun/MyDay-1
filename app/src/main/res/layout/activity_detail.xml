@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:background="#E1FBEB">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tdDate"
+                android:text="오늘날짜"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tdWeather"
+                android:text="오늘날씨"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tdMood"
+                android:text="오늘기분"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="제목"
+            android:layout_marginVertical="5dp"
+            android:textSize="25dp"
+            android:background="@null"></TextView>
+
+
+        <ImageView
+            android:id="@+id/Img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></ImageView>
+
+        <TextView
+            android:id="@+id/Content"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:hint="일상을 기록하세요."
+            android:layout_marginVertical="5dp"
+            android:textSize="20dp"
+            android:background="@null"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edtBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/circle_button"
+            android:text="일기 수정" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
+
